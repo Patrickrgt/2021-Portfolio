@@ -54,13 +54,13 @@ class Main extends Component {
   handleScroll = async (e) => {
     const landingContainer = document.querySelector(".outer-background");
     const secondaryContainer = document.querySelector(".websites-container");
-    var websiteHead = document.getElementById("websiteHead");
-    var websiteHeadbounds = websiteHead.getBoundingClientRect();
-    var secondaryContainerbounds = secondaryContainer.getBoundingClientRect();
+    // var websiteHead = document.getElementById("websiteHead");
+    // var websiteHeadbounds = websiteHead.getBoundingClientRect();
+    // var secondaryContainerbounds = secondaryContainer.getBoundingClientRect();
 
     secondaryContainer.style.display = "block";
     if (e.deltaY > 0) {
-      if (this.state.hideLanding == true) {
+      if (this.state.hideLanding === true) {
         landingContainer.style.display = "none";
         secondaryContainer.style.opacity = "1";
       }
@@ -259,6 +259,7 @@ class Main extends Component {
                     }}
                   ></section>
                   <img
+                    alt="this is a fern"
                     className="profile-pic"
                     src={fernPfp}
                     style={{

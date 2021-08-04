@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Main from "./components/main.jsx";
 import Mobile from "./components/mobile.jsx";

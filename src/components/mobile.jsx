@@ -39,6 +39,7 @@ class Mobile extends Component {
   showMore = (website, i) => {
     document.getElementById(`m-more-button-${i}`).style.display = "none";
     document.getElementById(`m-less-button-${i}`).style.display = "block";
+
     document.getElementById(`m-web-${i}`).style.display = "block";
   };
 
@@ -83,6 +84,15 @@ class Mobile extends Component {
             </div>
           </main>
 
+          <section className="m-skills-sub">
+            <p>
+              <span>Skills:</span> React, HTML, CSS, Python, Solidity, Three.js,
+              Firebase, Cloud Firestore, Express, Heroku, Node, Git, Material
+              UI, Bootstrap, Illustrator, Photoshop, Experience Design, Premiere
+              Pro
+            </p>
+          </section>
+
           <section className="m-fern-sub">
             <p>
               The web development stack that I am most confident coding in is
@@ -108,7 +118,11 @@ class Mobile extends Component {
           <main>
             {Object.keys(this.state.websites).map((website, i) => (
               <section id={`m-web-sec-${i}`} className="m-web-sec">
-                <h1 className="m-web-title">{website}</h1>
+                <a href={Object.values(this.state.websites)[i].site}>
+                  {" "}
+                  <h1 className="m-web-title">{website}</h1>
+                </a>
+
                 <p className="m-web-sub">
                   {Object.values(this.state.websites)[i].roles}
                 </p>

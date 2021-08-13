@@ -5,6 +5,12 @@
   transition: all ease 1s;
 }
 
+@media only screen and (min-width:1023px)  {
+  body {
+    overflow: hidden;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   /* overflow: hidden; */
@@ -116,11 +122,12 @@ html {
 }
 
 .desc-span {
+  overflow-y: hidden;
   margin-left: 2%;
   border-left: 2px solid white;
   padding: 0 2%;
   font-weight: 700;
-  font-size: 3vh;
+  font-size: 2.25vh;
 }
 
 .desc-sub {
@@ -384,6 +391,59 @@ html {
   transition: all ease 1s;
 }
 
+.skills-container {
+  top: 18%;
+  position: absolute;
+  left: 34%;
+  width: 38%;
+  background-color: #dabd9b;
+  transition: all ease 1s;
+  border: 2px solid white;
+}
+
+.skills-container span {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+.skills-container p {
+  line-height: 180%;
+  font-family: "Merriweather", serif;
+  color: #340a0a;
+  padding: 1% 2%;
+  font-size: 1.25vw;
+  transition: all ease 1s;
+}
+
+@media only screen and (max-width:1441px) {
+  .fern-floating {
+    position: absolute;
+    left: 16%;
+    bottom: 3%;
+}
+
+.stack-line {
+
+  height: 32%;
+ 
+}
+}
+
+@media only screen and (max-width:1441px) {
+  .fern-floating {
+    position: absolute;
+    left: 16%;
+    bottom: 3%;
+}
+
+.stack-line {
+
+  height: 32%;
+ 
+}
+}
+
 /* Mobile CSS */
 
 .m-body {
@@ -398,7 +458,7 @@ html {
 }
 
 .m-cont-all-web {
-  background: linear-gradient(0.4turn, #340A0A, black);
+  background: black;
 }
 
 .m-head-web-cont {
@@ -451,6 +511,18 @@ html {
   padding-right: 2vw;
 }
 
+.m-skills-sub {
+  padding-bottom: 6vw;
+  background-color: #340A0A;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 700;
+  width: 80%;
+  padding: 4vw 4vw;
+  margin: 6vw auto ;
+}
+
 .m-fern-sub {
   
   padding: 4vw 0;
@@ -492,6 +564,7 @@ html {
   margin: auto;
   padding-left: 4%;
   border-left: 2px solid white;
+  transition: all 1s ease;
 }
 
 .m-web-button {
@@ -508,7 +581,7 @@ html {
 
 #m-web-0 {
   display: none;
-  
+
 }
 
 #m-web-1 {
@@ -524,6 +597,7 @@ html {
 }
 
 #m-web-sec-0 {
+  transition: all 1s ease;
   border-radius: 10px;
   width: 95%;
   margin: auto;

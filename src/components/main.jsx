@@ -307,6 +307,20 @@ class Main extends Component {
                     engineering to propel my future forward.{" "}
                   </p>
                 </main>
+
+                <main
+                  className="skills-container"
+                  style={{
+                    transform: `translateY(${this.state.transform}px)`,
+                  }}
+                >
+                  <p>
+                    <span>Skills:</span> React, HTML, CSS, Python, Solidity,
+                    Three.js, Firebase, Cloud Firestore, Express, Heroku, Node,
+                    Git, Material UI, Bootstrap, Illustrator, Photoshop,
+                    Experience Design, Premiere Pro
+                  </p>
+                </main>
               </aside>
             </div>
           </main>

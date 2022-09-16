@@ -6,7 +6,9 @@ function App() {
   if (window.innerWidth >= 1024) {
     return <Main></Main>;
   } else if (window.innerWidth <= 1024) {
-    return <Mobile></Mobile>;
+    window.location.replace(
+      "https://6324df9d1522e50008cca640--keen-praline-6b9e52.netlify.app/"
+    );
   }
   return (
     <div className="App">

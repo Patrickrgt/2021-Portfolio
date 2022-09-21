@@ -303,8 +303,7 @@ class Main extends Component {
                 >
                   <p>
                     The web development stack that I am most confident coding in
-                    is FERN. Currently looking for internships in software
-                    engineering to propel my future forward.{" "}
+                    is FERN.
                   </p>
                 </main>
 
